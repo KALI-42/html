@@ -1,0 +1,33 @@
+    * {padding: 0; margin: 0}
+    body{
+        background-color: salmon;
+    }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .included {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: 80px;
+        }
+
+        .wrapper > div{
+            padding: 1em;
+            background-color: #CCFFCC;
+        }
+
+        .wrapper > div.light {
+            padding: 1em;
+            background-color: #FFCCFF;
+        }
+
+        .included > div {
+            background-color: #FFFFCC;
+            padding: 0.5em;
+        }
